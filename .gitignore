@@ -1,3 +1,6 @@
+# OllieOA Ignores
+external/*
+
 
 # Godot-specific ignores
 .import/

@@ -4,6 +4,7 @@
 - [ ] Itch page - Butler pipeline
 - [ ] 72 hour breakdown/plan 
 - [ ] Todo template
+- [x] Check when babay's breath blooms
 
 ### MENUS
 - [ ] Audio menu
@@ -20,5 +21,8 @@
 - [ ] Aseprite export script by percentage
 
 ### TWITCH
+- [ ] Countdown timer 
 - [ ] Submission system
 - [ ] Splash screen/logo (i.e. from GWJ to LD)
+- [x] Bots
+- [ ] LD Profile
