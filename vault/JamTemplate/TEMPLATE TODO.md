@@ -1,12 +1,13 @@
 # Template Todo
 ### ORGANISATION
-- [ ] Git repo
+- [x] Git repo
 - [ ] Itch page - Butler pipeline
 - [ ] 72 hour breakdown/plan 
 - [ ] Todo template
 - [x] Check when babay's breath blooms
 
 ### MENUS
+- [ ] Build menu theme
 - [ ] Audio menu
 - [ ] Control mapping menu
 - [ ] Game over
