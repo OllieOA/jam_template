@@ -1,0 +1,95 @@
+{
+  "main": {
+    "id": "4b47b5c3430e0e83",
+    "type": "split",
+    "children": [
+      {
+        "id": "feb1e1a49d473270",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "TEMPLATE TODO.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b2b8d4fbee33d4b5",
+    "type": "split",
+    "children": [
+      {
+        "id": "f79d2389d6791573",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d41ebe3582d88c8d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "19555a8f4c7dd46e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "57afdc8ce64b1cb3",
+    "type": "split",
+    "children": [
+      {
+        "id": "cf014ec7e7e19e5f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6e38b67a8e94f18a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "TEMPLATE TODO.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "feb1e1a49d473270",
+  "lastOpenFiles": [
+    "TEMPLATE TODO.md",
+    "Game Template.md"
+  ]
+}
