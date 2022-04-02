@@ -8,4 +8,4 @@
 
 08:00 -> 12:00 - Game mechanic development
 12:00 -> 17:00 - Work (not on game)
-17:00 -> 23:59 - Final push and polish
+17:00 -> 23:59 - Final push and polish (work the next day, so can't work to the deadline)

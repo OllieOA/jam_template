@@ -2,17 +2,17 @@
 ### ORGANISATION
 - [x] Git repo
 - [ ] Itch page - Butler pipeline
-- [ ] 72 hour breakdown/plan 
+- [x] 72 hour breakdown/plan 
 - [ ] Todo template
 - [x] Check when babay's breath blooms
 
 ### MENUS
-- [ ] Build menu theme
+- [x] Build menu theme
 - [ ] Audio menu
 - [ ] Control mapping menu
 - [ ] Game over
-- [ ] Level select (square buttons)
-- [ ] BUTTON FEEDBACK
+- [x] Level select (square buttons)
+- [x] BUTTON FEEDBACK
 - [ ] Splash Screen
 
 ### MUSIC
@@ -24,6 +24,6 @@
 ### TWITCH
 - [ ] Countdown timer 
 - [ ] Submission system
-- [ ] Splash screen/logo (i.e. from GWJ to LD)
+- [x] Splash screen/logo (i.e. from GWJ to LD)
 - [x] Bots
-- [ ] LD Profile
+- [x] LD Profile

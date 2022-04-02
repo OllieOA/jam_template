@@ -11,6 +11,13 @@ config_version=4
 [application]
 
 config/name="Jam Template"
+boot_splash/image="res://ui/gremlindevelopment_splash_screen.png"
+
+[autoload]
+
+AudioManager="*res://globals/audio_manager.tscn"
+SignalBus="*res://globals/signal_bus.gd"
+GameControl="*res://globals/game_control.tscn"
 
 [display]
 
