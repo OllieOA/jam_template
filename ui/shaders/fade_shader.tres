@@ -1,0 +1,19 @@
+[gd_resource type="Shader" format=2]
+
+[resource]
+code = "// This is just a basic alpha thing, but it's important to match it to the
+// other shaders for coding purposes
+
+shader_type canvas_item;
+
+uniform float intensity = 1.0;
+uniform vec4 fade_colour : hint_color = vec4(0.0, 0.0, 0.0, 1.0);
+
+void fragment(){
+	vec4 _texture = texture(TEXTURE, UV);
+	vec4 color = texture(SCREEN_TEXTURE, SCREEN_UV);
+	
+	_texture.rgba *= (fade_colour.rgba);
+	
+	COLOR = vec4((_texture.rgb)*color.rgb, _texture.a*intensity);
+}"

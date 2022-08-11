@@ -18,6 +18,7 @@ boot_splash/image="res://ui/gremlindevelopment_splash_screen.png"
 AudioManager="*res://globals/audio_manager.tscn"
 SignalBus="*res://globals/signal_bus.gd"
 GameControl="*res://globals/game_control.tscn"
+SceneManager="*res://globals/scene_manager.tscn"
 
 [display]
 

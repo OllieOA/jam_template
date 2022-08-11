@@ -1,0 +1,23 @@
+[gd_resource type="Shader" format=2]
+
+[resource]
+code = "shader_type canvas_item;
+
+uniform vec4 wipe_colour : hint_color = vec4(0.0, 0.0, 0.0, 1.0);
+uniform float left_intensity = 1.0;
+
+float wipe(vec2 uv){
+	uv *= 2.0 - uv.x;
+	float wipe_value = 1.0 - left_intensity * (uv.x + 0.9);
+	return wipe_value;
+}
+
+void fragment(){
+	vec4 _texture = texture(TEXTURE, UV);
+	vec4 color = texture(SCREEN_TEXTURE, SCREEN_UV);
+	
+	_texture.rgba *= (wipe_colour.rgba);
+	_texture.rgba *= (1.0 - wipe(UV));
+	
+	COLOR = vec4((_texture.rgb)*color.rgb, _texture.a);
+}"

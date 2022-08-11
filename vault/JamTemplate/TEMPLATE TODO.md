@@ -13,7 +13,7 @@
 - [ ] Game over
 - [x] Level select (square buttons)
 - [x] BUTTON FEEDBACK
-- [ ] Splash Screen
+- [x] Splash Screen
 
 ### MUSIC
 - [ ] FL Studio project
