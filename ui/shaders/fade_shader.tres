@@ -7,7 +7,7 @@ code = "// This is just a basic alpha thing, but it's important to match it to t
 shader_type canvas_item;
 
 uniform float intensity = 1.0;
-uniform vec4 fade_colour : hint_color = vec4(0.0, 0.0, 0.0, 1.0);
+uniform vec4 fade_colour : source_color = vec4(0.0, 0.0, 0.0, 1.0);
 
 void fragment(){
 	vec4 _texture = texture(TEXTURE, UV);

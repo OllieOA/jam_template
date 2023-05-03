@@ -3,7 +3,7 @@
 [resource]
 code = "shader_type canvas_item;
 
-uniform vec4 wipe_colour : hint_color = vec4(0.0, 0.0, 0.0, 1.0);
+uniform vec4 wipe_colour : source_color = vec4(0.0, 0.0, 0.0, 1.0);
 uniform float left_intensity = 1.0;
 
 float wipe(vec2 uv){
