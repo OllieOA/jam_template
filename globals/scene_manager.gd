@@ -1,12 +1,12 @@
 extends Control
 
-export (Array, Resource) var scenes = []
-onready var transition_animator = $"%transition_animator" as AnimationPlayer
-onready var scene_block = $"%scene_block" as ColorRect
+@export var scenes: Array[PackedScene] = []
+@onready var transition_animator = $"%transition_animator" as AnimationPlayer
+@onready var scene_block = $"%scene_block" as ColorRect
 
 var _scene_dict = {}
-var _current_scene: Resource
-var _next_scene: Resource
+var _current_scene: Node
+var _next_scene: PackedScene
 
 const transition_shaders := {
 	"fade": preload("res://ui/shaders/fade_shader.tres"),
@@ -17,7 +17,7 @@ const transition_shaders := {
 func _ready() -> void:
 	var root = get_tree().get_root()
 	_current_scene = root.get_child(root.get_child_count() - 1)
-	transition_animator.connect("animation_finished", self, "_handle_animation_finished")
+	transition_animator.connect("animation_finished", Callable(self, "_handle_animation_finished"))
 
 	# Establish scenes	
 	for scene in scenes:
@@ -46,7 +46,7 @@ func goto_scene(name: String, transition_type: String = "fade", speed: float = 1
 
 func _handle_animation_finished(_anim_name: String) -> void:
 	if _next_scene != null:
-		var _scene_change_result = get_tree().change_scene_to(_next_scene)
+		var _scene_change_result = get_tree().change_scene_to_packed(_next_scene)
 		transition_animator.play()
 		_next_scene = null
 	else:

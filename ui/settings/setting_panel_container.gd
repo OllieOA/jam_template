@@ -1,7 +1,7 @@
 extends MarginContainer
 
 
-export (NodePath) onready var discord_button = get_node(discord_button) as Button
+@export (NodePath) onready var discord_button = get_node(discord_button) as Button
 
 
 const DISCORD_LINK = "https://discord.gg/yhQEzQtQ4K"

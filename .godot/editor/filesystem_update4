@@ -1,0 +1,4 @@
+res://globals/scene_manager.gd
+res://default_env.tres
+res://globals/signal_bus.gd
+res://globals/game_control.tscn

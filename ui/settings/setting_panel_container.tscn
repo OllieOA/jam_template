@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://theme/in_game_menu.tres" type="Theme" id=1]
-[ext_resource path="res://ui/settings/icon_discord.png" type="Texture" id=2]
-[ext_resource path="res://ui/settings/icon_itch.png" type="Texture" id=3]
-[ext_resource path="res://ui/settings/icon_twitch.png" type="Texture" id=4]
+[ext_resource path="res://ui/settings/icon_discord.png" type="Texture2D" id=2]
+[ext_resource path="res://ui/settings/icon_itch.png" type="Texture2D" id=3]
+[ext_resource path="res://ui/settings/icon_twitch.png" type="Texture2D" id=4]
 [ext_resource path="res://ui/settings/setting_panel_container.gd" type="Script" id=5]
 
 [node name="SettingPanelContainer" type="MarginContainer"]
@@ -11,10 +11,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -112.0
-margin_top = -119.0
-margin_right = 112.0
-margin_bottom = 119.0
+offset_left = -112.0
+offset_top = -119.0
+offset_right = 112.0
+offset_bottom = 119.0
 theme = ExtResource( 1 )
 script = ExtResource( 5 )
 __meta__ = {
@@ -23,69 +23,69 @@ __meta__ = {
 discord_button = NodePath("PanelContainer/MarginContainer/VBoxContainer/Socials/DiscordLink")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
-margin_left = 10.0
-margin_top = 10.0
-margin_right = 373.0
-margin_bottom = 330.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 373.0
+offset_bottom = 330.0
 
 [node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
-margin_left = 8.0
-margin_top = 8.0
-margin_right = 355.0
-margin_bottom = 312.0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 355.0
+offset_bottom = 312.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
-margin_left = 10.0
-margin_top = 10.0
-margin_right = 337.0
-margin_bottom = 294.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 337.0
+offset_bottom = 294.0
 
 [node name="Button" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer"]
-margin_right = 327.0
-margin_bottom = 60.0
+offset_right = 327.0
+offset_bottom = 60.0
 text = "Hello There"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Button2" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer"]
-margin_top = 64.0
-margin_right = 327.0
-margin_bottom = 124.0
+offset_top = 64.0
+offset_right = 327.0
+offset_bottom = 124.0
 text = "General Kenobi"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="HSlider" type="HSlider" parent="PanelContainer/MarginContainer/VBoxContainer"]
-margin_top = 128.0
-margin_right = 327.0
-margin_bottom = 168.0
+offset_top = 128.0
+offset_right = 327.0
+offset_bottom = 168.0
 size_flags_vertical = 1
 
 [node name="Socials" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer"]
-margin_left = 11.0
-margin_top = 172.0
-margin_right = 315.0
-margin_bottom = 284.0
+offset_left = 11.0
+offset_top = 172.0
+offset_right = 315.0
+offset_bottom = 284.0
 size_flags_horizontal = 4
 size_flags_vertical = 2
 
 [node name="DiscordLink" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/Socials"]
-margin_right = 96.0
-margin_bottom = 112.0
+offset_right = 96.0
+offset_bottom = 112.0
 icon = ExtResource( 2 )
 
 [node name="ItchLink" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/Socials"]
-margin_left = 100.0
-margin_right = 204.0
-margin_bottom = 112.0
+offset_left = 100.0
+offset_right = 204.0
+offset_bottom = 112.0
 icon = ExtResource( 3 )
 
 [node name="TwitchLink" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/Socials"]
-margin_left = 208.0
-margin_right = 304.0
-margin_bottom = 112.0
+offset_left = 208.0
+offset_right = 304.0
+offset_bottom = 112.0
 icon = ExtResource( 4 )
 
 [connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/Socials/DiscordLink" to="." method="_on_DiscordLink_pressed"]

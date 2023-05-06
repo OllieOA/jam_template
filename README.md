@@ -1,7 +1,23 @@
 # Jam Template
 Template for use in jams
 
-## Components
+## Version
+
+Supports Godot 4.x
+
+## Supplementary Components
+
+### CI/CD with GitHub Actions
+
+Using the GitHub Actions native CI/CD pipeline, we can automate pushing games to itch.io with some minimal setup. You will need to generate a [Butler API token](https://docs.butlerlabs.ai/reference/uploading-documents-to-the-rest-api) to utilise this.
+
+Effectively, a containerised version of Godot is used to headlessly generate the builds and then the Butler API automatically pushes the builds to the jam page.
+
+### Vault
+
+A vault used with the Obsidian program, good for collective notes, but not great for live collaboration. Instead, one should be sure to use a tool like Google Jamboard or something rather than this, though it is available if preferred.
+
+## Game Components
 
 ### This README.md
 
